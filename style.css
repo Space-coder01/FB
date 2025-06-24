@@ -1,0 +1,15 @@
+@media (max-width: 640px) {
+  ._8esk { /* container around logo+heading */
+    text-align: center;
+  }
+  ._8esj { /* main two-column wrapper */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  ._9vtf { /* the login form */
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 320px;
+  }
+}

